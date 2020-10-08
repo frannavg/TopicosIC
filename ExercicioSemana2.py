@@ -4,27 +4,6 @@ import pandas
 from sklearn import linear_model
 from sklearn.datasets import load_diabetes
 
-# Load the diabetes dataset
-diabetes = load_diabetes()
-
-#print (diabetes.DESCR)
-
-
-
-tabela = pandas.DataFrame(diabetes.data)
-tabela.columns = diabetes.feature_names
-tabela.head()
-
-print (tabela.head(10))
-
-
-
-tabela['y'] = diabetes.target
-tabela.head(10)
-
-print (tabela['y'])
-
-
 #Caracteristicas escolhidas: sex e bp
 
 print ('\nSEX\n')
